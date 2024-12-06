@@ -21,4 +21,4 @@ networks:
   backend:
 
 volumes:
-  tripmeal-data: {}
+  tripmeal-data:
