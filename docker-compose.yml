@@ -4,14 +4,14 @@ version: "3"
 services:
   web:
     build: web
-    image: europe-west6-docker.pkg.dev/gq-cloud-computing/trip-cloud-repo/tripmeal-cloud-web:1.0 
+    image: europe-west6-docker.pkg.dev/gq-cloud-computing/mealrep/tripmeal-cloud-web:1.0 
     networks:
       - backend
     ports:
       - 5000
   db:
     build: db
-    image: europe-west6-docker.pkg.dev/gq-cloud-computing/trip-cloud-repo/tripmeal-cloud-db:1.0 
+    image: europe-west6-docker.pkg.dev/gq-cloud-computing/mealrep/tripmeal-cloud-db:1.0 
     networks:
       - backend
     volumes:
